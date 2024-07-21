@@ -8,11 +8,13 @@ struct InfoItemView: View {
             Image(systemName: item.systemImage)
                 .font(.title)
                 .frame(width: 30)
-                //.foregroundStyle(Color.accentColor)
+                .foregroundStyle(Color.accentColor)
 
             VStack(alignment: .leading, spacing: 5) {
                 Text(item.title)
-                    .font(.headline)
+                    .font(.body.weight(.semibold))
+                    .foregroundStyle(Color.accentColor)
+
                 Text(item.description)
                     .font(.footnote)
                     .foregroundColor(.secondary)
@@ -20,8 +22,4 @@ struct InfoItemView: View {
             .multilineTextAlignment(.leading)
         }
     }
-}
-
-#Preview {
-    InfoItemView(item: .preview)
 }

@@ -18,24 +18,11 @@ struct InfoItem: Identifiable {
 }
 
 extension InfoItem {
-    static let supportedLanguages: [InfoItem] = [
-        InfoItem(
-            "Bamanankan",
-            systemImage: "globe",
-            description: "Le bambara est une langue parlée en Afrique de l'Ouest, notamment au Mali, au Sénégal, au Burkina Faso, et en Côte d'Ivoire."
-        ),
-        InfoItem(
-            "Soninkaxane",
-            systemImage: "bookmark.fill",
-            description: "Le soninké est une langue parlée en Afrique de l'Ouest, notamment au Mali, au Sénégal, en Gambie, en Mauritanie, au Burkina Faso, en Côte d'Ivoire, et en Guinée-Bissau."
-        )
-    ]
-    
     static let privacy: [InfoItem] = [
         InfoItem(
             "Aucune Collecte de Données",
-            systemImage: "info.bubble.fill.rtl",
-            description: "Nous ne collectons aucune information personnelle, technique ou autre lorsque vous utilisez notre application. Nous ne recueillons ni ne stockons aucune donnée vous concernant."
+            systemImage: "info",
+            description: "Nous ne collectons aucune information personnelle, technique ou autre. Nous ne recueillons ni ne stockons aucune donnée vous concernant."
         ),
         InfoItem(
             "Utilisation des Informations",
@@ -50,22 +37,12 @@ extension InfoItem {
         InfoItem(
             "Vos Droits",
             systemImage: "building.columns.fill",
-            description: "Vous conservez tous les droits liés à votre vie privée, même si aucune donnée n'est collectée. Si vous avez des questions ou des préoccupations, n'hésitez pas à nous contacter à team@afrcvn.com."
+            description: "Vous conservez tous les droits liés à votre vie privée. Si vous avez des questions ou des préoccupations, n'hésitez pas à nous contacter à team@afrcvn.com."
         ),
         InfoItem(
-            "Modifications de la Politique de Confidentialité",
-            systemImage: "arrow.2.circlepath",
-            description: "Bien que cette politique de confidentialité indique que nous ne collectons aucune donnée, nous nous réservons le droit de la mettre à jour si nécessaire. Nous vous encourageons à vérifier régulièrement cette page pour vous assurer que vous êtes informé des dernières modifications."
+            "Modifications",
+            systemImage: "point.bottomleft.filled.forward.to.point.topright.scurvepath",
+            description: "Bien que cette politique de confidentialité indique que nous ne collectons aucune donnée, nous nous réservons le droit de la mettre à jour si nécessaire. Nous vous tiendrons informés des changements le cas échéant."
         )
     ]
-    
-    static let preview = InfoItem(
-        "Info item",
-        systemImage: "info.bubble.fill.rtl",
-        description: """
-        Here is some decription of preview info content.
-        New line is here jus for preview.
-        """
-    )
 }
-

@@ -20,18 +20,18 @@ class SoninkeStyleProvider: KeyboardStyle.StandardProvider {
     /// - Returns: The button text for the primary action type.
     private func primaryButtonText(type: Keyboard.ReturnKeyType) -> String {
         switch type {
-        case .continue: "ka taa fɛ"
-        case .return: "ka segin"
-        case .done: "a kɛra"
+        case .continue: "na daga"
+        case .return: "ka sage"
+        case .done: "a duguta"
         case .emergencyCall: "Emergency Call"
-        case .go: "ka taa"
-        case .join: "k‘a sɛgɛrɛ"
-        case .newLine: "line kura"
+        case .go: "na daga"
+        case .join: "na daga"
+        case .newLine: "noone kurumba"
         case .next: "nata"
-        case .ok: "ka sɔn"
-        case .route: "sira"
-        case .search: "k‘a ɲini"
-        case .send: "k‘a ci"
+        case .ok: "ok"
+        case .route: "kille"
+        case .search: "n‘a mundu"
+        case .send: "k‘a xeyi"
         case .custom(title: let title): title
         }
     }

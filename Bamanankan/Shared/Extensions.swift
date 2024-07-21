@@ -41,6 +41,17 @@ extension KeyboardLayout {
         }
     }
     
+    func insert(_ char: Character, after item: KeyboardAction) {
+        let lower = tryCreateBottomRowItem(for: .character(String(char)), size: .init(width: .input, height: idealItemHeight))
+        let upper = tryCreateBottomRowItem(for: .character(String(char).capitalized), size: .init(width: .input, height: idealItemHeight))
+        if let lower {
+            itemRows.insert(lower, after: item)
+        }
+        if let upper, upper != lower {
+            itemRows.insert(upper, after: item)
+        }
+    }
+    
     func insert(_ char: Character, before item: Character) {
         let lower = tryCreateBottomRowItem(for: .character(String(char)), size: .init(width: .input, height: idealItemHeight))
         let upper = tryCreateBottomRowItem(for: .character(String(char).capitalized), size: .init(width: .input, height: idealItemHeight))
@@ -63,6 +74,12 @@ extension KeyboardLayout {
         }
     }
     
+    func insert(_ newAction: KeyboardAction, before action: KeyboardAction) {
+        if let new = tryCreateBottomRowItem(for: action, size: .init(width: .input, height: idealItemHeight)) {
+            itemRows.insert(new, before: action)
+        }
+    }
+
     func replace(_ char: String, with newItem: String) {
         if let item = itemRows.flatMap({ $0 }).first(where: { $0.rowId == .character(char) }) {
             itemRows.replace(item, with: .init(action: .character(newItem), size: item.size, edgeInsets: item.edgeInsets))
@@ -70,4 +87,11 @@ extension KeyboardLayout {
             itemRows.replace(item, with: .init(action: .character(newItem.capitalized), size: item.size, edgeInsets: item.edgeInsets))
         }
     }
+    
+    func replace(action: KeyboardAction, with newItem: String) {
+        if let item = itemRows.flatMap({ $0 }).first(where: { $0.action.image ==  action.image}) {
+            itemRows.replace(item, with: .init(action: .character(newItem), size: item.size, edgeInsets: item.edgeInsets))
+        }
+    }
+
 }

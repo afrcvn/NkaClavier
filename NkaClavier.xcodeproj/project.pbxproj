@@ -7,6 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F476F13E2C4BFA7300838DBB /* KeyboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F476F13D2C4BFA7300838DBB /* KeyboardViewController.swift */; };
+		F476F1422C4BFA7300838DBB /* Nko.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = F476F13B2C4BFA7200838DBB /* Nko.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		F476F1472C4BFAB300838DBB /* NkoLayoutProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = F476F1462C4BFAB300838DBB /* NkoLayoutProvider.swift */; };
+		F476F1482C4BFB0000838DBB /* CustomAutocompleteProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4BDA3522C0E621E003F67B7 /* CustomAutocompleteProvider.swift */; };
+		F476F1492C4BFB0300838DBB /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4BDA3532C0E621E003F67B7 /* Extensions.swift */; };
+		F476F14A2C4BFB0700838DBB /* SearchEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4BDA3542C0E621E003F67B7 /* SearchEngine.swift */; };
+		F476F14C2C4C01FA00838DBB /* NkoStyleProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = F476F14B2C4C01FA00838DBB /* NkoStyleProvider.swift */; };
+		F476F1502C4C037F00838DBB /* KeyboardKit in Frameworks */ = {isa = PBXBuildFile; productRef = F476F14F2C4C037F00838DBB /* KeyboardKit */; };
+		F476F1522C4C0FEE00838DBB /* NkoCalloutActionProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = F476F1512C4C0FEE00838DBB /* NkoCalloutActionProvider.swift */; };
+		F47CE6062C4AB70C0087E7F9 /* VideoPlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F47CE6052C4AB70C0087E7F9 /* VideoPlayerView.swift */; };
+		F49AD1C42C4C4F7400769B7C /* InfoPlist.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = F49AD1C32C4C4F7400769B7C /* InfoPlist.xcstrings */; };
+		F49AD1C82C4D34F300769B7C /* demo1.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = F49AD1C62C4D34F300769B7C /* demo1.mp4 */; };
+		F49AD1CC2C4D38C200769B7C /* demo2.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = F49AD1CB2C4D38C100769B7C /* demo2.mp4 */; };
+		F49AD1CE2C4D3AD700769B7C /* Screen.swift in Sources */ = {isa = PBXBuildFile; fileRef = F49AD1CD2C4D3AD700769B7C /* Screen.swift */; };
+		F49AD1D02C4D3BB700769B7C /* VideoScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = F49AD1CF2C4D3BB700769B7C /* VideoScreen.swift */; };
+		F49AD1D42C4D3D6F00769B7C /* InputSet+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F49AD1D32C4D3D6F00769B7C /* InputSet+Extension.swift */; };
+		F49AD1D62C4D3DA600769B7C /* KeyboardAction+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F49AD1D52C4D3DA600769B7C /* KeyboardAction+Extension.swift */; };
 		F4BDA3172C0E5903003F67B7 /* NkaClavierApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4BDA3162C0E5903003F67B7 /* NkaClavierApp.swift */; };
 		F4BDA3192C0E5903003F67B7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4BDA3182C0E5903003F67B7 /* ContentView.swift */; };
 		F4BDA31B2C0E5906003F67B7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F4BDA31A2C0E5906003F67B7 /* Assets.xcassets */; };
@@ -30,15 +47,19 @@
 		F4BDA3662C0E62E1003F67B7 /* SearchEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4BDA3542C0E621E003F67B7 /* SearchEngine.swift */; };
 		F4BDA3672C0E62E1003F67B7 /* CustomAutocompleteProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4BDA3522C0E621E003F67B7 /* CustomAutocompleteProvider.swift */; };
 		F4BDA3702C0E634D003F67B7 /* InfoItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4BDA3682C0E634D003F67B7 /* InfoItem.swift */; };
-		F4BDA3712C0E634D003F67B7 /* BlurEffect.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4BDA36A2C0E634D003F67B7 /* BlurEffect.swift */; };
 		F4BDA3722C0E634D003F67B7 /* InfoItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4BDA36B2C0E634D003F67B7 /* InfoItemView.swift */; };
-		F4BDA3732C0E634D003F67B7 /* PopButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4BDA36C2C0E634D003F67B7 /* PopButton.swift */; };
-		F4BDA3742C0E634D003F67B7 /* PrivacyPolicyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4BDA36D2C0E634D003F67B7 /* PrivacyPolicyView.swift */; };
 		F4BDA3752C0E634D003F67B7 /* Typewriter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4BDA36E2C0E634D003F67B7 /* Typewriter.swift */; };
 		F4BDA3792C0E65D8003F67B7 /* InfoPlist.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = F4BDA3782C0E65D8003F67B7 /* InfoPlist.xcstrings */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		F476F1402C4BFA7300838DBB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F4BDA30B2C0E5903003F67B7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F476F13A2C4BFA7200838DBB;
+			remoteInfo = Nko;
+		};
 		F4BDA32E2C0E6004003F67B7 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = F4BDA30B2C0E5903003F67B7 /* Project object */;
@@ -63,6 +84,7 @@
 			dstSubfolderSpec = 13;
 			files = (
 				F4BDA3402C0E603C003F67B7 /* Soninkaxane.appex in Embed Foundation Extensions */,
+				F476F1422C4BFA7300838DBB /* Nko.appex in Embed Foundation Extensions */,
 				F4BDA3302C0E6004003F67B7 /* Bamanankan.appex in Embed Foundation Extensions */,
 			);
 			name = "Embed Foundation Extensions";
@@ -71,6 +93,20 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		F476F13B2C4BFA7200838DBB /* Nko.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = Nko.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		F476F13D2C4BFA7300838DBB /* KeyboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardViewController.swift; sourceTree = "<group>"; };
+		F476F13F2C4BFA7300838DBB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F476F1462C4BFAB300838DBB /* NkoLayoutProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NkoLayoutProvider.swift; sourceTree = "<group>"; };
+		F476F14B2C4C01FA00838DBB /* NkoStyleProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NkoStyleProvider.swift; sourceTree = "<group>"; };
+		F476F1512C4C0FEE00838DBB /* NkoCalloutActionProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NkoCalloutActionProvider.swift; sourceTree = "<group>"; };
+		F47CE6052C4AB70C0087E7F9 /* VideoPlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPlayerView.swift; sourceTree = "<group>"; };
+		F49AD1C32C4C4F7400769B7C /* InfoPlist.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = InfoPlist.xcstrings; sourceTree = "<group>"; };
+		F49AD1C62C4D34F300769B7C /* demo1.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = demo1.mp4; sourceTree = "<group>"; };
+		F49AD1CB2C4D38C100769B7C /* demo2.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = demo2.mp4; sourceTree = "<group>"; };
+		F49AD1CD2C4D3AD700769B7C /* Screen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Screen.swift; sourceTree = "<group>"; };
+		F49AD1CF2C4D3BB700769B7C /* VideoScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoScreen.swift; sourceTree = "<group>"; };
+		F49AD1D32C4D3D6F00769B7C /* InputSet+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "InputSet+Extension.swift"; sourceTree = "<group>"; };
+		F49AD1D52C4D3DA600769B7C /* KeyboardAction+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "KeyboardAction+Extension.swift"; sourceTree = "<group>"; };
 		F4BDA3132C0E5903003F67B7 /* NkaClavier.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NkaClavier.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F4BDA3162C0E5903003F67B7 /* NkaClavierApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NkaClavierApp.swift; sourceTree = "<group>"; };
 		F4BDA3182C0E5903003F67B7 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -92,15 +128,20 @@
 		F4BDA3602C0E62B6003F67B7 /* SoninkeStyleProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SoninkeStyleProvider.swift; sourceTree = "<group>"; };
 		F4BDA3612C0E62B6003F67B7 /* suggestion.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = suggestion.json; sourceTree = "<group>"; };
 		F4BDA3682C0E634D003F67B7 /* InfoItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InfoItem.swift; sourceTree = "<group>"; };
-		F4BDA36A2C0E634D003F67B7 /* BlurEffect.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlurEffect.swift; sourceTree = "<group>"; };
 		F4BDA36B2C0E634D003F67B7 /* InfoItemView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InfoItemView.swift; sourceTree = "<group>"; };
-		F4BDA36C2C0E634D003F67B7 /* PopButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopButton.swift; sourceTree = "<group>"; };
-		F4BDA36D2C0E634D003F67B7 /* PrivacyPolicyView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PrivacyPolicyView.swift; sourceTree = "<group>"; };
 		F4BDA36E2C0E634D003F67B7 /* Typewriter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Typewriter.swift; sourceTree = "<group>"; };
 		F4BDA3782C0E65D8003F67B7 /* InfoPlist.xcstrings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json.xcstrings; path = InfoPlist.xcstrings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		F476F1382C4BFA7200838DBB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F476F1502C4C037F00838DBB /* KeyboardKit in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		F4BDA3102C0E5903003F67B7 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -127,12 +168,46 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F476F13C2C4BFA7300838DBB /* Nko */ = {
+			isa = PBXGroup;
+			children = (
+				F49AD1D22C4D3D5800769B7C /* Extensions */,
+				F476F13F2C4BFA7300838DBB /* Info.plist */,
+				F49AD1C32C4C4F7400769B7C /* InfoPlist.xcstrings */,
+				F476F13D2C4BFA7300838DBB /* KeyboardViewController.swift */,
+				F476F1512C4C0FEE00838DBB /* NkoCalloutActionProvider.swift */,
+				F476F1462C4BFAB300838DBB /* NkoLayoutProvider.swift */,
+				F476F14B2C4C01FA00838DBB /* NkoStyleProvider.swift */,
+			);
+			path = Nko;
+			sourceTree = "<group>";
+		};
+		F49AD1D12C4D3CED00769B7C /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				F49AD1CB2C4D38C100769B7C /* demo2.mp4 */,
+				F49AD1C62C4D34F300769B7C /* demo1.mp4 */,
+				F4BDA31A2C0E5906003F67B7 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		F49AD1D22C4D3D5800769B7C /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				F49AD1D32C4D3D6F00769B7C /* InputSet+Extension.swift */,
+				F49AD1D52C4D3DA600769B7C /* KeyboardAction+Extension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		F4BDA30A2C0E5903003F67B7 = {
 			isa = PBXGroup;
 			children = (
 				F4BDA3152C0E5903003F67B7 /* NkaClavier */,
 				F4BDA32A2C0E6004003F67B7 /* Bamanankan */,
 				F4BDA33A2C0E603B003F67B7 /* Soninkaxane */,
+				F476F13C2C4BFA7300838DBB /* Nko */,
 				F4BDA3142C0E5903003F67B7 /* Products */,
 				F4BDA3442C0E6052003F67B7 /* Frameworks */,
 			);
@@ -144,6 +219,7 @@
 				F4BDA3132C0E5903003F67B7 /* NkaClavier.app */,
 				F4BDA3292C0E6004003F67B7 /* Bamanankan.appex */,
 				F4BDA3392C0E603B003F67B7 /* Soninkaxane.appex */,
+				F476F13B2C4BFA7200838DBB /* Nko.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -151,12 +227,11 @@
 		F4BDA3152C0E5903003F67B7 /* NkaClavier */ = {
 			isa = PBXGroup;
 			children = (
+				F49AD1D12C4D3CED00769B7C /* Resources */,
 				F4BDA36F2C0E634D003F67B7 /* Views */,
 				F4BDA3692C0E634D003F67B7 /* Models */,
-				F4BDA31A2C0E5906003F67B7 /* Assets.xcassets */,
 				F4BDA3782C0E65D8003F67B7 /* InfoPlist.xcstrings */,
 				F4BDA3162C0E5903003F67B7 /* NkaClavierApp.swift */,
-				F4BDA3182C0E5903003F67B7 /* ContentView.swift */,
 			);
 			path = NkaClavier;
 			sourceTree = "<group>";
@@ -208,6 +283,7 @@
 			isa = PBXGroup;
 			children = (
 				F4BDA3682C0E634D003F67B7 /* InfoItem.swift */,
+				F49AD1CD2C4D3AD700769B7C /* Screen.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -215,11 +291,11 @@
 		F4BDA36F2C0E634D003F67B7 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				F4BDA36A2C0E634D003F67B7 /* BlurEffect.swift */,
+				F4BDA3182C0E5903003F67B7 /* ContentView.swift */,
 				F4BDA36B2C0E634D003F67B7 /* InfoItemView.swift */,
-				F4BDA36C2C0E634D003F67B7 /* PopButton.swift */,
-				F4BDA36D2C0E634D003F67B7 /* PrivacyPolicyView.swift */,
 				F4BDA36E2C0E634D003F67B7 /* Typewriter.swift */,
+				F47CE6052C4AB70C0087E7F9 /* VideoPlayerView.swift */,
+				F49AD1CF2C4D3BB700769B7C /* VideoScreen.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -227,6 +303,26 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		F476F13A2C4BFA7200838DBB /* Nko */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F476F1452C4BFA7300838DBB /* Build configuration list for PBXNativeTarget "Nko" */;
+			buildPhases = (
+				F476F1372C4BFA7200838DBB /* Sources */,
+				F476F1382C4BFA7200838DBB /* Frameworks */,
+				F476F1392C4BFA7200838DBB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Nko;
+			packageProductDependencies = (
+				F476F14F2C4C037F00838DBB /* KeyboardKit */,
+			);
+			productName = Nko;
+			productReference = F476F13B2C4BFA7200838DBB /* Nko.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 		F4BDA3122C0E5903003F67B7 /* NkaClavier */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = F4BDA3212C0E5906003F67B7 /* Build configuration list for PBXNativeTarget "NkaClavier" */;
@@ -241,6 +337,7 @@
 			dependencies = (
 				F4BDA32F2C0E6004003F67B7 /* PBXTargetDependency */,
 				F4BDA33F2C0E603C003F67B7 /* PBXTargetDependency */,
+				F476F1412C4BFA7300838DBB /* PBXTargetDependency */,
 			);
 			name = NkaClavier;
 			productName = NkaClavier;
@@ -297,6 +394,9 @@
 				LastSwiftUpdateCheck = 1540;
 				LastUpgradeCheck = 1540;
 				TargetAttributes = {
+					F476F13A2C4BFA7200838DBB = {
+						CreatedOnToolsVersion = 15.4;
+					};
 					F4BDA3122C0E5903003F67B7 = {
 						CreatedOnToolsVersion = 15.4;
 					};
@@ -327,16 +427,27 @@
 				F4BDA3122C0E5903003F67B7 /* NkaClavier */,
 				F4BDA3282C0E6004003F67B7 /* Bamanankan */,
 				F4BDA3382C0E603B003F67B7 /* Soninkaxane */,
+				F476F13A2C4BFA7200838DBB /* Nko */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		F476F1392C4BFA7200838DBB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F49AD1C42C4C4F7400769B7C /* InfoPlist.xcstrings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		F4BDA3112C0E5903003F67B7 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				F4BDA3792C0E65D8003F67B7 /* InfoPlist.xcstrings in Resources */,
+				F49AD1CC2C4D38C200769B7C /* demo2.mp4 in Resources */,
+				F49AD1C82C4D34F300769B7C /* demo1.mp4 in Resources */,
 				F4BDA31B2C0E5906003F67B7 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -360,16 +471,32 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		F476F1372C4BFA7200838DBB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F476F14A2C4BFB0700838DBB /* SearchEngine.swift in Sources */,
+				F476F14C2C4C01FA00838DBB /* NkoStyleProvider.swift in Sources */,
+				F476F1522C4C0FEE00838DBB /* NkoCalloutActionProvider.swift in Sources */,
+				F476F1482C4BFB0000838DBB /* CustomAutocompleteProvider.swift in Sources */,
+				F476F13E2C4BFA7300838DBB /* KeyboardViewController.swift in Sources */,
+				F49AD1D42C4D3D6F00769B7C /* InputSet+Extension.swift in Sources */,
+				F476F1472C4BFAB300838DBB /* NkoLayoutProvider.swift in Sources */,
+				F49AD1D62C4D3DA600769B7C /* KeyboardAction+Extension.swift in Sources */,
+				F476F1492C4BFB0300838DBB /* Extensions.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		F4BDA30F2C0E5903003F67B7 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				F4BDA3192C0E5903003F67B7 /* ContentView.swift in Sources */,
-				F4BDA3742C0E634D003F67B7 /* PrivacyPolicyView.swift in Sources */,
 				F4BDA3752C0E634D003F67B7 /* Typewriter.swift in Sources */,
-				F4BDA3732C0E634D003F67B7 /* PopButton.swift in Sources */,
-				F4BDA3712C0E634D003F67B7 /* BlurEffect.swift in Sources */,
+				F49AD1CE2C4D3AD700769B7C /* Screen.swift in Sources */,
+				F47CE6062C4AB70C0087E7F9 /* VideoPlayerView.swift in Sources */,
 				F4BDA3172C0E5903003F67B7 /* NkaClavierApp.swift in Sources */,
+				F49AD1D02C4D3BB700769B7C /* VideoScreen.swift in Sources */,
 				F4BDA3722C0E634D003F67B7 /* InfoItemView.swift in Sources */,
 				F4BDA3702C0E634D003F67B7 /* InfoItem.swift in Sources */,
 			);
@@ -405,6 +532,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		F476F1412C4BFA7300838DBB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F476F13A2C4BFA7200838DBB /* Nko */;
+			targetProxy = F476F1402C4BFA7300838DBB /* PBXContainerItemProxy */;
+		};
 		F4BDA32F2C0E6004003F67B7 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = F4BDA3282C0E6004003F67B7 /* Bamanankan */;
@@ -418,6 +550,58 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		F476F1432C4BFA7300838DBB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = QN843L945A;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Nko/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Nko;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.afrcvn.NkaClavier.Nko;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F476F1442C4BFA7300838DBB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = QN843L945A;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Nko/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Nko;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.afrcvn.NkaClavier.Nko;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 		F4BDA31F2C0E5906003F67B7 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -544,7 +728,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_TEAM = QN843L945A;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -552,18 +736,22 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.afrcvn.NkaClavier;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -574,7 +762,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_TEAM = QN843L945A;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -582,18 +770,22 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.afrcvn.NkaClavier;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -710,6 +902,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		F476F1452C4BFA7300838DBB /* Build configuration list for PBXNativeTarget "Nko" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F476F1432C4BFA7300838DBB /* Debug */,
+				F476F1442C4BFA7300838DBB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		F4BDA30E2C0E5903003F67B7 /* Build configuration list for PBXProject "NkaClavier" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -760,6 +961,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		F476F14F2C4C037F00838DBB /* KeyboardKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F4BDA3242C0E5FDE003F67B7 /* XCRemoteSwiftPackageReference "KeyboardKit" */;
+			productName = KeyboardKit;
+		};
 		F4BDA3452C0E6052003F67B7 /* KeyboardKit */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = F4BDA3242C0E5FDE003F67B7 /* XCRemoteSwiftPackageReference "KeyboardKit" */;
