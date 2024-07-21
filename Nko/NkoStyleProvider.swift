@@ -12,13 +12,11 @@ class NkoStyleProvider: KeyboardStyle.StandardProvider {
         case .space: nil
         case .keyboardType(let type):
             switch type {
-            case .alphabetic(let `case`):
-                "ߒߞߏ"
-            case .numeric:
-                "߁߂߃"
+            case .alphabetic(_): "ߒߞߏ"
+            case .numeric: "߁߂߃"
             default: super.buttonText(for: action)
             }
-        case .primary(let type): nil
+        case .primary(_): nil
         default: super.buttonText(for: action)
         }
     }
@@ -55,4 +53,3 @@ class NkoStyleProvider: KeyboardStyle.StandardProvider {
         }
     }
 }
-
