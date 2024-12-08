@@ -1,10 +1,3 @@
-//
-//  KeyboardViewController.swift
-//  Bamanankan
-//
-//  Created by Samba Diawara on 2024-06-03.
-//
-
 import Foundation
 import KeyboardKit
 
