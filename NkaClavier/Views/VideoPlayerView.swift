@@ -1,10 +1,3 @@
-//
-//  DemoView.swift
-//  NkaClavier
-//
-//  Created by Samba Diawara on 2024-07-19.
-//
-
 import SwiftUI
 import AVKit
 

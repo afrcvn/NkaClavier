@@ -1,12 +1,6 @@
-//
-//  ContentView.swift
-//  NkaClavier
-//
-//  Created by Samba Diawara on 2024-06-03.
-//
-
 import SwiftUI
 import AVFoundation
+
 
 struct ContentView: View {
     @State var screen: Screen? = .first
@@ -60,7 +54,7 @@ struct ContentView: View {
     
     func screen1() -> some View {
         VStack(spacing: 15) {
-            Typewriter2(texts: ["Bamanankan →", "Soninkaxane →", "→ ߒߞߏ"], cursor: .init(String.zeroWidth), speed: 0.01, delay: 2)
+            Typewriter(texts: ["Bamanankan →", "Soninkaxane →", "→ ߒߞߏ"], cursor: .zeroWidth, speed: 0.01, delay: 2)
                 .font(.largeTitle.weight(.semibold))
                 .foregroundStyle(.blue.gradient)
             Text("Notre mission est de vous offrir des claviers adaptés à certaines langues  parlées en Afrique.")
@@ -94,7 +88,7 @@ struct ContentView: View {
         
         .frame(maxWidth: .infinity, maxHeight: .infinity)
     }
-    
+        
     func playStop() {
         DispatchQueue.main.async {
             switch screen {
@@ -114,10 +108,12 @@ struct ContentView: View {
             }
         }
     }
+    
+
 }
 
-extension String {
-    public static var zeroWidth: String { "\u{200E}" }
+extension Character {
+    public static var zeroWidth: Character { "\u{200E}" }
 }
 
 #Preview {

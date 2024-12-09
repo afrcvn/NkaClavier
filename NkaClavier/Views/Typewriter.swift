@@ -1,56 +1,6 @@
 import SwiftUI
-import AudioToolbox
 
 struct Typewriter: View {
-    private var text: String
-    @State private var currentText: String = ""
-    @State private var timer: Timer?
-    @State private var index = 0
-    @State private var showCursor = true
-    private let cursor: String
-    private let speed: TimeInterval
-    
-    init(text: String, cursor: Character = "_", speed: TimeInterval = 0.2) {
-        self.text = text
-        self.cursor = String(cursor)
-        self.speed = speed
-    }
-
-    var body: some View {
-        Text(AttributedString(currentText) + cursorAttributed)
-            .onAppear(perform: startTyping)
-    }
-    
-    var cursorAttributed: AttributedString {
-        var text = AttributedString(cursor)
-        text.foregroundColor = showCursor ? .primary : .clear
-        return text
-    }
-
-    func startTyping() {
-        timer?.invalidate()
-        index = 0
-        currentText = ""
-        
-        // Timer for typing effect
-        timer = Timer.scheduledTimer(withTimeInterval: speed, repeats: true) { _ in
-            if index < text.count {
-                let nextIndex = text.index(currentText.startIndex, offsetBy: index)
-                currentText.append(text[nextIndex])
-                index += 1
-                AudioServicesPlaySystemSound(1104)
-            } else {
-                timer?.invalidate()
-            }
-        }
-        
-        Timer.scheduledTimer(withTimeInterval: 0.3, repeats: true) { _ in
-            showCursor.toggle()
-        }
-    }
-}
-
-struct Typewriter2: View {
     private var texts: [String]
     @State private var currentText: String = ""
     @State private var currentIndex: Int = 0
@@ -69,20 +19,28 @@ struct Typewriter2: View {
         self.speed = speed
         self.delay = delay
     }
-
+    init(texts: String..., cursor: Character = "_", speed: TimeInterval = 0.2, delay: TimeInterval = 1.0) {
+        self.texts = texts
+        self.cursor = String(cursor)
+        self.speed = speed
+        self.delay = delay
+    }
+    
     var body: some View {
         Text(AttributedString(currentText) + cursorAttributed)
             .onAppear(perform: startTyping)
+            .onDisappear(perform: stopTyping)
     }
     
-    var cursorAttributed: AttributedString {
+    private var cursorAttributed: AttributedString {
         var text = AttributedString(cursor)
         text.foregroundColor = showCursor ? .primary : .clear
         return text
     }
-
-    func startTyping() {
-        timer?.invalidate()
+    
+    private func startTyping() {
+        stopTyping() // Ensure no previous timers exist
+        
         currentIndex = 0
         charIndex = 0
         currentText = ""
@@ -94,15 +52,22 @@ struct Typewriter2: View {
             typeOrDeleteCharacter()
         }
         
-        Timer.scheduledTimer(withTimeInterval: 0.3, repeats: true) { _ in
+        // Cursor blinking
+        Timer.scheduledTimer(withTimeInterval: 0.5, repeats: true) { _ in
             if !isPaused {
                 showCursor.toggle()
             }
         }
     }
-
-    func typeOrDeleteCharacter() {
+    
+    private func stopTyping() {
+        timer?.invalidate()
+        timer = nil
+    }
+    
+    private func typeOrDeleteCharacter() {
         guard currentIndex < texts.count else {
+            // Loop back to the first text
             currentIndex = 0
             charIndex = 0
             currentText = ""
@@ -112,16 +77,13 @@ struct Typewriter2: View {
         
         let text = texts[currentIndex]
         
-        if isPaused {
-            return
-        }
+        if isPaused { return }
         
         if isDeleting {
             if !currentText.isEmpty {
                 currentText.removeLast()
-                //AudioServicesPlaySystemSound(1104)
             } else {
-                // Move to the next text in the list
+                // Move to the next text
                 currentIndex += 1
                 isDeleting = false
                 charIndex = 0
@@ -133,11 +95,9 @@ struct Typewriter2: View {
                 let nextIndex = text.index(text.startIndex, offsetBy: charIndex)
                 currentText.append(text[nextIndex])
                 charIndex += 1
-                //AudioServicesPlaySystemSound(1104)
             } else {
-                // Start deleting after a delay
+                // Pause before deleting
                 isPaused = true
-                showCursor = false
                 DispatchQueue.main.asyncAfter(deadline: .now() + delay) {
                     self.isDeleting = true
                     self.isPaused = false
@@ -148,5 +108,5 @@ struct Typewriter2: View {
 }
 
 #Preview {
-    Typewriter(text: "Bonjour Bahsamba Diawara")
+    Typewriter(texts: "One", "Two", "Three", "Welcome to SwiftUI!", cursor: "⏺")
 }

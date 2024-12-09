@@ -1,10 +1,3 @@
-//
-//  File.swift
-//  NkaClavier
-//
-//  Created by Samba Diawara on 2024-07-21.
-//
-
 import SwiftUI
 import AVFoundation
 
@@ -36,7 +29,7 @@ struct VideoScreen: View {
             VideoPlayerView(player: player)
                 .clipShape(.rect(cornerRadius: 40))
                 .padding(2)
-                .overlay(.placeholder, in: .rect(cornerRadius: 43).stroke(lineWidth: 4))
+                .overlay(.placeholder, in: borderShape)
                 .overlay(alignment: .bottom) {
                     Group {
                         if let footerText {
@@ -54,12 +47,16 @@ struct VideoScreen: View {
                         .multilineTextAlignment(.center)
                         .foregroundStyle(.gray)
                 }
-                .aspectRatio(1179/2556, contentMode: .fit)
+                .aspectRatio(aspectRatio, contentMode: .fit)
                 .safeAreaPadding(.bottom, 50)
-    
                 .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .center)
-            
         }
 
+    }
+    
+    private let aspectRatio: CGFloat = 1179/2556
+    
+    private var borderShape: some Shape {
+        .rect(cornerRadius: 43).stroke(lineWidth: 4)
     }
 }
